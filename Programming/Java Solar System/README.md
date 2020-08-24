@@ -1,0 +1,2 @@
+# Project Description
+A solution used in coursework at university, the aim of this program was to use inheritance to create an extendable solar system which could be added to in the future. The Planet instances inherit their base location of orbit from the Point class, and the Moon class inherits from the Planet class. The main method is located in the Driver.java file, simply run this file for the program. 
