@@ -1,2 +1,2 @@
-#Project Description
+**Project Description**
 This program is a test harness in Java that can measure the performance characteristics of the ArrayList, LinkedList, HashSet and HashMap data structures. For each of the ArrayList, LinkedList, HashSet and HashMap data structures, the program undertakes a performance analysis to measure the time taken to add, delete and retrieve a Person object. To run the program, run the “Driver.java” file. 
