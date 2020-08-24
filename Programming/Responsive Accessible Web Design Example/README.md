@@ -1,0 +1,2 @@
+# Project Description
+A simple web design challenge to incorporate columns to create a web design which is capable of scaling between different screen sizes. When the screen size gets to phone size, Javascript is used to create a burger menu. 

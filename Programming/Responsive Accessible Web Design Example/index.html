@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<title>Lancaster University</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="burgerTime.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+	
+	<!--Header / Banner-->
+    <div class = "col-10" id="header">
+        <img src="banner.png" class ="header"  alt="Page Banner" >
+      
+    </div>
+    
+    <!--Header Logo-->
+     <div class = "col-2" id="hlogo">
+        
+        <img src="icon.png" class = "hlogo" alt="Icon" >
+    </div>
+    
+    
+<!--Groups the two main divs with the menu bar as to allow the news to sit on the side-->
+<div class="col-10 col-l-12 col-s-12 col-m-12">
+	
+	<!--Menu Bar-->
+    <div class="col-12 col-l-12 col-s-12 col-m-12" id="menu-bar">
+		
+        <ul class="navbar">
+			<li id="menicon"><a href="#"><img src="icon.png" class = "logo" alt="Icon" ></a></li>
+			
+				<div id="mentext">
+					<li><a href="#"style="color:white">Home &nbsp</a></li>
+					<li><a href="#"style="color:white">People &nbsp</a></li>
+					<li><a href="#"style="color:white">Courses</a></li>
+					<li><a href="#"style="color:white">About us</a></li>
+					<li><a href="#"style="color:white">Contact us</a></li>
+				</div>
+				
+				<li id="menburger"> <a href="javascript:void(0);" class="burger" onclick="burgerTime()"style="color:white">
+			<i class="fa fa-bars"></i>
+    
+			</a></li>
+            
+        </ul>
+    </div>
+	
+	<!--Campus Div-->
+    <div class ="col-6 col-l-6 col-s-12" id="campus"style = "padding:10px">
+        <h1 id = "center">University Campus</h1>
+        <img id ="center" src="aerial.png" alt="Aerial Photo"><br>
+        Located on a beautiful campus in the North West of England, the University places great emphasis on a strong student experience and employability and gives students access to academics who are experts in their field. Lancaster is one of only a handful of universities with a collegiate system which has helped to forge a strong sense of identity and loyalty, and continues to be a distinctive feature of student life at Lancaster. Students from one hundred countries make up a thriving community based around our nine colleges, creating a culturally diverse campus in a location that boasts the combination of city, coast and countryside.
+        <form action="#">
+			<button id = "center" class="button button2" type="submit">The Campus</button>
+		</form>
+        </div>
+	
+	<!--Facts Div-->
+    <div class = "col-6 col-l-6 col-s-12" id="facts"style = "padding:10px">
+        <h1 id = "center">Facts and Figures</h1>
+        Students at Lancaster University are among the most satisfied in the UK according to the 2015 National Student Survey, in which the University achieved 91% on the overall satisfaction score, placing it firmly amongst the top 10 UK universities.
+        Summer 2011 saw the opening of our brand new £20m Sports Centre, ranked sixth in the THE Student Experience Survey 2015.
+        97% of Lancaster University graduates have gone into work or further study within six months of graduating.
+        As one of the few collegiate universities in the UK we welcome each student to one of our colleges on campus. In addition to our eight undergraduate colleges, we have one dedicated to our postgraduate students.
+        <form action="#">
+			<button id = "center" class="button button2" type="submit">The Figures</button>
+		</form>
+    </div>
+</div>
+    
+    <!--News Div-->
+    <div class = "col-2 col-l-12 col-s-12" id="news" style = "padding:10px;  background-color: #333; color: white;">
+        <h1 id = "center">News</h1>
+        <h2 id = "center">Lancaster Academics to unlock patient information to create a healthier North West</h2>
+        Academics from across Lancaster University are coming together on a ground-breaking £20m initiative using data and technology in revolutionary ways to improve patient care and ultimately save lives in the North of England.
+        <form action="#">
+			<button id = "center" class="button button2" type="submit">The News</button>
+		</form>
+    </div>
+    
+</div>
+
+</body>
+</html>
