@@ -1,0 +1,13 @@
+{%extends 'menu_bar.html'%}
+{%block title%}One Time Passcode{%endblock%}
+{%block content%}
+<header>One Time Passcode</header>
+<br>
+<div style="width:400px; margin:auto">
+	<form action="/one_time_passcode" method="post" class="form">
+		<div class="field">Enter verification code: <input type="text" placeholder="Enter code" id="onetimepass" name="onetimepass" required></div>
+		<div class="field" style="text-align:center"><input class="button" type="submit" value="Submit"></div>
+	</form>
+</div>
+
+{%endblock%}

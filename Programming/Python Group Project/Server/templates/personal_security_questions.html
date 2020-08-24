@@ -1,0 +1,41 @@
+{%extends 'menu_bar.html'%}
+{%block title%}Personal Security Questions{%endblock%}
+{%block content%}
+<header>Personal Security Questions</header><br>
+
+<div class="question">First Question: <form action="/" method="post"></div>
+	<select class="selection" id="firstquestion" name="firstquestion">
+		<option value="" disabled selected>Select your option</option>
+		<option value = "choice 1">What is your first pet's name</option>
+		<option value = "choice 2">What primary school did you attend?</option>
+		<option value = "choice 3">In what town or city did your mother and father meet?</option>
+		<option value = "choice 4">What primary school did you attend?</option>
+		<option value = "choice 5">What was the house number and street name you lived in as a child?</option>
+	</select>
+<div style="margin:10px"><input type="text" id="firstanswer" placeholder="Enter answer" required></div><br>
+
+<div class="question">Second Question: </div>
+	<select class="selection" id="secondquestion" name="secondquestion">
+		<option value="" disabled selected>Select your option</option>
+		<option value = "choice 1">What is your first pet's name</option>
+		<option value = "choice 2">What primary school did you attend?</option>
+		<option value = "choice 3">In what town or city did your mother and father meet?</option>
+		<option value = "choice 4">What primary school did you attend?</option>
+		<option value = "choice 5">What was the house number and street name you lived in as a child?</option>
+	</select>
+<div style="margin:10px"><input type="text" id="secondanswer" placeholder="Enter answer" required></div><br>
+
+<div class="question">Third Question: </div>
+	<div><select class="selection" id="thirdquestion" name="thirdquestion"></div>
+		<option value="" disabled selected>Select your option</option>
+		<option value = "choice 1">What is your first pet's name</option>
+		<option value = "choice 2">What primary school did you attend?</option>
+		<option value = "choice 3">In what town or city did your mother and father meet?</option>
+		<option value = "choice 4">What primary school did you attend?</option>
+		<option value = "choice 5">What was the house number and street name you lived in as a child?</option>
+	</select>
+<div style="margin:10px"><input type="text" id="third answer" placeholder="Enter answer" required></div><br>
+
+<div class="field" style="text-align:center"><input class="button" type="submit" value="Submit"></div>
+</form>
+{%endblock%}

@@ -1,0 +1,17 @@
+{%extends 'menu_bar.html'%}
+{%block title%}Update Password{%endblock%}
+{%block content%}
+<header>Update Password</header><br>
+<div style="width:400px; margin:auto">
+	<form action="/updating" method="post" class="form">
+	
+		<div class="field">Password: <input type="password" placeholder="Enter password" id="password" name="password"  onkeyup='passwordValidate();' required></div>
+		<span id='passStrength'></span>
+		<div class="field">Confirm Password: <input type="password" placeholder="Enter password" id="passConfirm" name="passConfirm" onkeyup='passwordValidate();' required></div> 
+		<span id='passmsg'></span>
+
+		<div class="field" style="text-align:center"><input class="button" type="submit" value="Submit"></div>
+</form>
+</div>
+<script src="static/js/ext_script.js"></script>
+{%endblock%}

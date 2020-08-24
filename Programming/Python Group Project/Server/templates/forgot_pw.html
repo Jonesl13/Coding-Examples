@@ -1,0 +1,16 @@
+{%extends 'menu_bar.html'%}
+{%block title%}Forgot Password{%endblock%}
+{%block content%}
+<header>Forgot Password</header><br>
+<div style="width:400px; margin:auto">
+	<form action="/forgot_pw" method="post" class="form">
+	
+		<div class="field">Enter your username: <input type="text" placeholder="Enter username" id="username" name="username" autocomplete="off" autocapitalize="off" autocorrect="off" required pattern=".{6,}"></div>
+	
+		<div class="field" style="text-align:center"><input class="button" type="submit" value="Submit" onClick="showText()">
+			<p id="text"></p>
+		</div>
+</form>
+</div>
+<script src="static/js/ext_script.js"></script>
+{%endblock%}

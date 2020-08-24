@@ -1,0 +1,4 @@
+*.pyc
+venv/
+Server/log.zip
+Server/Network/ServerKeyFile/ServerPublickey.txt

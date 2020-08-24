@@ -1,0 +1,11 @@
+Flask
+pyopenssl
+request
+bcrypt
+regex
+password-strength
+sympy
+pyjwt
+flask_mail
+itsdangerous
+cryptography

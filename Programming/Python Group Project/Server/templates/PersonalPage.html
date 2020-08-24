@@ -1,0 +1,17 @@
+{%extends 'menu_bar.html'%}
+	{%block title%}Medical Record{%endblock%}
+`	{%block content%}
+	<p>Username: {{username}}</p>
+    <table style = "align:center; margin: auto; width:300px">
+            <tr>
+                <td> Title </td> 
+                <td> Value </td>
+            </tr>
+    {% for title, value in labels.items() %}
+            <tr>
+                <td>{{ title }}</td> 
+                <td>{{ value }}</td>
+            </tr>
+    {% endfor %}
+    </table>
+    {%endblock%}

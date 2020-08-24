@@ -1,0 +1,50 @@
+{%extends 'menu_bar.html'%}
+{%block title%}Registration{%endblock%}
+{%block content%}
+<header>Registration</header><br>
+<div style="width:33%; margin:auto">
+<form action="/registering" method="post" class="form">
+		<div class="field">First Name: <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required></div>
+		<div class="field">Last Name: <input type="text" id="lastname" name="lastname" placeholder="Enter last name" required></div>
+		<div class="field">Date Of Birth: <input type="date" id="dob" style="width:141px; height:20px" name="dob" required></div>
+		<div class="field">Username: <input type="text" placeholder="Enter username" id="username" name="username" autocomplete="off" autocapitalize="off" autocorrect="off" required pattern=".{6,}"></div>
+		<div class="field">Email: <input type="email" placeholder="Enter email" id="email" name="email" required></div>
+		<div class="field">Password: <input type="password" placeholder="Enter password" id="password" name="password"  onkeyup='passwordValidate();' required></div>
+		<span id='passStrength'></span>
+		<div class="field">Confirm Password: <input type="password" placeholder="Enter password" id="passConfirm" name="passConfirm" onkeyup='passwordValidate();' required></div> 
+		<span id='passmsg'></span>
+</div><br>
+		
+<div class="question">First Security Question:</div>
+	<select class="selection" id="firstquestion" name="firstquestion" required>
+		<option value="" disabled selected>Select your option</option>
+		<option value = "choice 1">What is your first pet's name</option>
+		<option value = "choice 2">What primary school did you attend?</option>
+		<option value = "choice 3">In what town or city did your mother and father meet?</option>
+	</select>
+<div style="margin:10px"><input type="text" id="firstanswer" name="firstanswer" placeholder="Enter answer" required></div><br>
+
+<div class="question">Second Security Question: </div>
+	<select class="selection" id="secondquestion" name="secondquestion" required>
+		<option value="" disabled selected>Select your option</option>
+		<option value = "choice 1">What is your oldest cousin's first name?</option>
+		<option value = "choice 2">In what town or city did you attend your first job?</option>
+		<option value = "choice 3">Where were you when you had your first alcoholic drink (or cigarette)?</option>
+	</select>
+<div style="margin:10px"><input type="text" id="secondanswer" placeholder="Enter answer" name="secondanswer" required></div><br>
+
+<div class="question">Third Security Question: </div>
+	<div><select class="selection" id="thirdquestion" name="thirdquestion" required></div>
+		<option value="" disabled selected>Select your option</option>
+		<option value = "choice 1">What city were you born in?</option>
+		<option value = "choice 2">What was your childhood nickname?</option>
+		<option value = "choice 3">What is your favourite fish-themed block cypher? </option>
+	</select>
+<div style="margin:10px"><input type="text" id="thirdanswer" placeholder="Enter answer" name="thirdanswer" required></div><br>
+
+<div class="field" style="text-align:center"><input class="button" type="submit" value="Submit" id="submit" name="submit"></div>
+			
+</form>
+
+<script src="static/js/ext_script.js"></script>
+{%endblock%}

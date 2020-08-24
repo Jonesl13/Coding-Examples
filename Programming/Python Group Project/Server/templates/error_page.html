@@ -1,0 +1,8 @@
+{% extends "menu_bar.html" %}
+{% block title %}Page Not Found{% endblock %}
+{% block body %}
+
+<h1>Oops! It seems an error has occurred.</h1>
+<a href="{{ url_for("home") }}">Click on this link to go back home</a>
+
+{% endblock %}

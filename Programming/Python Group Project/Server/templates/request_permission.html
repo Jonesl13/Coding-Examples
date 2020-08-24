@@ -1,0 +1,15 @@
+{%extends 'menu_bar.html'%}
+	{%block title%}Request Permission{%endblock%}
+`	{%block content%}
+	<p>Username: {{username}}</p>
+	<form action="/send_request/{{username}}" method="post" class="form">
+	<select id="request">
+	<option value="admin">Admin</option>
+	<option value="staff">Staff</option>
+	<option value="client">Client</option>
+	</select>
+	<div class="field" style="text-align:center"><input class="button" type="submit" value="Submit" id="submit" name="submit"></div>
+			
+	</form>
+
+    {%endblock%}
