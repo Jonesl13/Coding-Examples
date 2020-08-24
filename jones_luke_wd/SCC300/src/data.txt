@@ -1,8 +1,0 @@
-started
-0
-date
-0
-level
-300
-progress
-150

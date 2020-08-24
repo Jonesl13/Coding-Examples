@@ -1,0 +1,12 @@
+Get DatabaseMetaData meta = con.getMetaData()
+getTables
+getColumns 
+getPrimaryKeys
+getImportedKeys
+
+meta.columnNullable
+
+
+executeStatement();
+
+
