@@ -1,3 +1,0 @@
-Flask==2.2.2
-PyYAML==6.0
-flake8==5.0.4
